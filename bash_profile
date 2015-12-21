@@ -5,6 +5,8 @@ export NODE_PATH=/usr/local/bin/node:/usr/local/share/npm/lib/node_modules:/usr/
 
 export PATH=/usr/local/bin:$PATH
 
+export PATH=~/bin:$PATH
+
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 # Aliases
