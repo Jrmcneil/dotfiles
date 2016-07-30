@@ -1,4 +1,3 @@
-" Sections:                                                                  "
 "   01. General ................. General Vim behavior                       "
 "   02. Events .................. General autocmd events                     "
 "   03. Theme/Colors ............ Colors, fonts, etc.                        "
@@ -42,6 +41,11 @@ set ofu=syntaxcomplete#Complete
 
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
+
+" Powerline
+python from powerline.vim import setup as powerline_setup
+python powerline_setup()
+python del powerline_setup
 
 " Prettify JSON files
 autocmd BufRead,BufNewFile *.json set filetype=json
@@ -99,11 +103,14 @@ set nowrap                " don't wrap text
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Prettify JSON files making them easier to read
-command PrettyJSON %!python -m json.tool
+" command PrettyJSON %!python -m json.tool
 
-" New line by pressing Enter (new line above with Shift-Enter)
-nmap <S-Enter> O<Esc>
-nmap <CR> o<Esc>
+" New line by pressing Enter (new line above with Shift-Enter - mapped to ✠)
+nnoremap oo <Esc>o<Esc>
+nnoremap OO <Esc>O<Esc>
+
+" remap esc to ii
+imap ii <ESC>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "07. Plugins

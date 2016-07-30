@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="honukai"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -51,7 +51,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/Users/jamesmcneil/.rvm/gems/ruby-2.1.2/bin:/Users/jamesmcneil/.rvm/gems/ruby-2.1.2@global/bin:/Users/jamesmcneil/.rvm/rubies/ruby-2.1.2/bin:/Users/jamesmcneil/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH"
+export PATH="$PATH:/Users/jamesmcneil/.rvm/gems/ruby-2.1.2/bin:/Users/jamesmcneil/.rvm/gems/ruby-2.1.2@global/bin:/Users/jamesmcneil/.rvm/rubies/ruby-2.1.2/bin:/Users/jamesmcneil/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -79,6 +79,6 @@ export PATH="/Users/jamesmcneil/.rvm/gems/ruby-2.1.2/bin:/Users/jamesmcneil/.rvm
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+# source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
