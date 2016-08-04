@@ -42,11 +42,6 @@ set ofu=syntaxcomplete#Complete
 set t_Co=256              " enable 256-color mode.
 syntax enable             " enable syntax highlighting (previously syntax on).
 
-" Powerline
-python from powerline.vim import setup as powerline_setup
-python powerline_setup()
-python del powerline_setup
-
 " Prettify JSON files
 autocmd BufRead,BufNewFile *.json set filetype=json
 autocmd Syntax json sou ~/.vim/syntax/json.vim
