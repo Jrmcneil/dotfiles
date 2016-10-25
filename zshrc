@@ -75,10 +75,13 @@ export PATH="$PATH:/Users/jamesmcneil/.rvm/gems/ruby-2.1.2/bin:/Users/jamesmcnei
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Aliases
+
+alias ll="ls -lhA"
+alias scip="racket -i -p neil/sicp -l xrepl"
+
+export PATH=/usr/local/bin:$PATH
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
