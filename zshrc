@@ -85,3 +85,13 @@ export PATH=/usr/local/bin:$PATH
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f /Users/jamesmcneil/Downloads/google-cloud-sdk/path.zsh.inc ]; then
+  source '/Users/jamesmcneil/Downloads/google-cloud-sdk/path.zsh.inc'
+fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f /Users/jamesmcneil/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
+  source '/Users/jamesmcneil/Downloads/google-cloud-sdk/completion.zsh.inc'
+fi
