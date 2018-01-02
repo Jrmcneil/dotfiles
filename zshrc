@@ -80,11 +80,47 @@ export PATH="$PATH:/Users/jamesmcneil/.rvm/gems/ruby-2.1.2/bin:/Users/jamesmcnei
 
 alias ll="ls -lhA"
 alias scip="racket -i -p neil/sicp -l xrepl"
+alias idea="open -b com.jetbrains.intellij"
 
 export PATH=/usr/local/bin:$PATH
 # source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# PATHS
+
+## Set GOPATH
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
+
+## JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+## HMRC WORKSPACE
+export WORKSPACE=$HOME/projects/hmrc
+
+## Jenkins 
+export jenkins_user=james.mcneil
+
+## Local Secrets
+source $HOME/.secrets
+
+## Mongo 3.2
+export PATH="/usr/local/opt/mongodb@3.2/bin:$PATH"
+
+#TEST KITCHEN
+export TEST_KITCHEN_IAM_GROUPS=webops_engineer
+export TEST_KITCHEN_SSH_KEY=${HOME}/.ssh/id_rsa_platform
+export TEST_KITCHEN_INSTANCE_PROFILE=TestKitchen
+export TEST_KITCHEN_USER=james.mcneil
+export AWS_USER=james.mcneil
+export PACKER_SSH_USER=james.mcneil
+
+#Stacks
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f /Users/jamesmcneil/Downloads/google-cloud-sdk/path.zsh.inc ]; then
