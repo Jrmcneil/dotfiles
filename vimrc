@@ -79,6 +79,7 @@ set showmatch
 set statusline=%<%f\%h%m%r%=%-20.(line=%l\ \ col=%c%V\ \ totlin=%L%)\ \ \%h%m%r%=%-40(bytval=0x%B,%n%Y%)\%P
 set visualbell
 
+map <Esc>[B <Down>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 05. Text Formatting/Layout                                                 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -103,9 +104,6 @@ set nowrap                " don't wrap text
 " New line by pressing Enter (new line above with Shift-Enter - mapped to ✠)
 nnoremap oo <Esc>o<Esc>
 nnoremap OO <Esc>O<Esc>
-
-" remap esc to ii
-imap ii <ESC>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "07. Plugins
