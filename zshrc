@@ -122,12 +122,11 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 
+#Kubernetes
+export KUBE_EDITOR="vim"
+
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f /Users/jamesmcneil/Downloads/google-cloud-sdk/path.zsh.inc ]; then
-  source '/Users/jamesmcneil/Downloads/google-cloud-sdk/path.zsh.inc'
-fi
+if [ -f '/Users/jamesmcneil/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/jamesmcneil/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f /Users/jamesmcneil/Downloads/google-cloud-sdk/completion.zsh.inc ]; then
-  source '/Users/jamesmcneil/Downloads/google-cloud-sdk/completion.zsh.inc'
-fi
+if [ -f '/Users/jamesmcneil/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jamesmcneil/google-cloud-sdk/completion.zsh.inc'; fi
