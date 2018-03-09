@@ -7,26 +7,8 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="honukai"
 
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -51,49 +33,28 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="$PATH:/Users/jamesmcneil/.rvm/gems/ruby-2.1.2/bin:/Users/jamesmcneil/.rvm/gems/ruby-2.1.2@global/bin:/Users/jamesmcneil/.rvm/rubies/ruby-2.1.2/bin:/Users/jamesmcneil/.rvm/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-# export MANPATH="/usr/local/man:$MANPATH"
+#vi bindings
+bindkey -v
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+# PATHS
+export PATH="$PATH:/usr/bin:/bin:/usr/sbin:/sbin"
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+export PATH=/usr/local/bin:$PATH
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Aliases
-
 alias ll="ls -lhA"
 alias scip="racket -i -p neil/sicp -l xrepl"
 alias idea="open -b com.jetbrains.intellij"
 
-export PATH=/usr/local/bin:$PATH
-# source /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-# PATHS
-
 ## Set GOPATH
-export GOPATH=$HOME/.go
+export GOPATH=$HOME/golang:$HOME/projects/go
+export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
 
-## JAVA_HOME
+ ##JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 ## HMRC WORKSPACE
