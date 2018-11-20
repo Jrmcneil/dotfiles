@@ -25,6 +25,37 @@ bindkey -v
 alias ll="ls -lhA"
 alias scip="racket -i -p neil/sicp -l xrepl"
 alias idea="open -b com.jetbrains.intellij"
+#
+#github aliases
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit -m'
+alias gd='git diff'
+alias gh='git hist'
+alias gk='gitk --all&'
+alias gco='git checkout '
+alias gl='git pull'
+alias gp='git push'
+alias gs='git status '
+alias gx='gitx --allexport'
+
+##mongo alias
+#alias mongod='mongod --dbpath ~/data/db'
+
+#set vim as default
+export GIT_EDITOR=vim
+export VISUAL=vim
+export EDITOR=vim
+set -o vi
+
+#cd options
+alias cd..='cd ../'                         # Go back 1 directory level (for fast typers)
+alias ..='cd ../'                           # Go back 1 directory level
+alias ...='cd ../../'                       # Go back 2 directory levels
+alias .3='cd ../../../'                     # Go back 3 directory levels
+alias .4='cd ../../../../'                  # Go back 4 directory levels
+alias .5='cd ../../../../../'               # Go back 5 directory levels
+alias .6='cd ../../../../../../'            # Go back 6 directory levels
 
 # PATHS
 
@@ -40,7 +71,10 @@ if [ -f '/Users/jamesmcneil/google-cloud-sdk/path.zsh.inc' ]; then source '/User
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jamesmcneil/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/jamesmcneil/google-cloud-sdk/completion.zsh.inc'; fi
 export PATH=/usr/local/bin:usr/bin:$PATH
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
+## export PATH=/usr/local/opt/python/libexec/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
  ##JAVA_HOME
 export JAVA_HOME=$(/usr/libexec/java_home)
@@ -74,3 +108,10 @@ source /usr/local/bin/virtualenvwrapper.sh
 #Kubernetes
 export KUBE_EDITOR="vim"
 
+#GPG pinentry
+export GPG_TTY=$(tty)
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
