@@ -1,0 +1,12 @@
+# Show dotfiles in NERDTree
+let NERDTreeShowHidden=1
+
+# Set number on line and relative number on others
+:set number relativenumber
+
+# Set absolute number on insert
+:augroup numbertoggle
+:  autocmd!
+:  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+:  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+:augroup END
