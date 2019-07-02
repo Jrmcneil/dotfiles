@@ -16,6 +16,10 @@ brew "neovim"
 brew "python"
 # Code-search similar to ack
 brew "the_silver_searcher"
+# Text interface for Git repositories
+brew "tig"
+# Terminal multiplexer
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Executes a program periodically, showing output fullscreen
@@ -27,4 +31,3 @@ brew "cloudfoundry/tap/bosh-cli"
 brew "cloudfoundry/tap/cf-cli"
 # Maintained ctags implementation
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
-brew 'tmux'
