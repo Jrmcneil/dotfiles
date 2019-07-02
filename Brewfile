@@ -27,3 +27,4 @@ brew "cloudfoundry/tap/bosh-cli"
 brew "cloudfoundry/tap/cf-cli"
 # Maintained ctags implementation
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+brew 'tmux'
