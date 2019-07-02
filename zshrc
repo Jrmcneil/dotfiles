@@ -69,14 +69,17 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
- ##JAVA_HOME
-export JAVA_HOME=$(/usr/libexec/java_home)
+#  ##JAVA_HOME
+# export JAVA_HOME=$(/usr/libexec/java_home)
 
 ## Jenkins 
 export jenkins_user=james.mcneil
 
 ## Local Secrets
 source $HOME/.secrets
+
+# set path for Z
+source "$(brew --prefix)/Cellar/z/1.9/etc/profile.d/z.sh"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
